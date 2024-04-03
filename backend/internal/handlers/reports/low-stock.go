@@ -40,3 +40,4 @@ func GetLowStockReport(c *gin.Context) {
 
 	c.JSON(http.StatusOK, lowStock)
 }
+
