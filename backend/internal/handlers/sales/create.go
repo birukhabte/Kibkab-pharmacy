@@ -155,3 +155,4 @@ func CreateSale(c *gin.Context) {
 
 	c.JSON(http.StatusCreated, gin.H{"message": "Draft sale created", "sale_id": saleID})
 }
+
