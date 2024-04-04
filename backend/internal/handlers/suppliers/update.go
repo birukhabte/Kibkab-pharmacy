@@ -95,3 +95,4 @@ func UpdateSupplier(c *gin.Context) {
 
 	c.IndentedJSON(http.StatusOK, supplier)
 }
+
