@@ -23,3 +23,4 @@ func LogActivity(employeeID uuid.UUID, action, entityType string, entityID *uuid
 	return db.DB.Create(&logEntry).Error
 }
 
+
