@@ -19,3 +19,4 @@ func GetAllMedicines(c *gin.Context) {
 	c.JSON(http.StatusOK, medicines)
 }
 
+
