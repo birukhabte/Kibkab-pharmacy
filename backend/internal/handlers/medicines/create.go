@@ -87,3 +87,4 @@ func CreateMedicine(c *gin.Context) {
 
 
 
+
