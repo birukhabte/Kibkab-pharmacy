@@ -42,3 +42,4 @@ func PayCommission(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"message": "commission marked as paid"})
 }
 
+
