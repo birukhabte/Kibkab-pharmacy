@@ -84,3 +84,4 @@ func CreateMedicine(c *gin.Context) {
 	c.JSON(http.StatusCreated, medicine)
 }
 
+
