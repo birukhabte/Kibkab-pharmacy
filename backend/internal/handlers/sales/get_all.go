@@ -57,3 +57,4 @@ func GetAllSales(c *gin.Context) {
 
 	c.IndentedJSON(http.StatusOK, sales)
 }
+
