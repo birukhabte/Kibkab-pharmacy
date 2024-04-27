@@ -85,3 +85,4 @@ func GetRecentSales(c *gin.Context) {
 
 	c.JSON(http.StatusOK, sales)
 }
+
