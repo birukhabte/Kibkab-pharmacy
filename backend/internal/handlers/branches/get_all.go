@@ -25,3 +25,4 @@ func GetAllBranches(c *gin.Context) {
 		"branches": branches,
 	})
 }
+
