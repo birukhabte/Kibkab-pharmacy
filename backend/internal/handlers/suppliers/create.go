@@ -98,3 +98,4 @@ func CreateSupplier(c *gin.Context) {
 	c.IndentedJSON(http.StatusCreated, supplier)
 }
 
+
