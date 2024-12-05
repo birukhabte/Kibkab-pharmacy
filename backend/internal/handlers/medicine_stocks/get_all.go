@@ -27,3 +27,4 @@ func GetAllStock(c *gin.Context) {
 
 	c.JSON(http.StatusOK, stock)
 }
+
