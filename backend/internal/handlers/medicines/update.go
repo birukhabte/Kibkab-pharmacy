@@ -60,3 +60,4 @@ func UpdateMedicine(c *gin.Context) {
 	c.JSON(http.StatusOK, medicine)
 }
 
+
