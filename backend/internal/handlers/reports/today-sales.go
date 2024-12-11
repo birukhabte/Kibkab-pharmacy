@@ -58,3 +58,4 @@ func ReportTodaySales(c *gin.Context) {
 		"total_revenue":         totalRevenue,
 	})
 }
+
