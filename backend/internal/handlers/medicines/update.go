@@ -62,3 +62,4 @@ func UpdateMedicine(c *gin.Context) {
 
 
 
+
