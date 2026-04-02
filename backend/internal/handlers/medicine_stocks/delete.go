@@ -1,0 +1,28 @@
+package medicine_stock
+
+import (
+	"log"
+	"net/http"
+
+	"github.com/gechjs/Pharmacy-App/db"
+	"github.com/gechjs/Pharmacy-App/models"
+	"github.com/gin-gonic/gin"
+	"github.com/google/uuid"
+)
+
+func DeleteStock(c *gin.Context) {
+	idParam := c.Param("id")
+	id, err := uuid.Parse(idParam)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "invalid stock ID"})
+		return
+	}
+
+	if err := db.DB.Delete(&models.MedicineStock{}, "id = ?", id).Error; err != nil {
+		log.Printf("DeleteStock: failed to delete stock: %s", err.Error())
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "failed to delete stock"})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"message": "Stock deleted successfully"})
+}
